@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nguyễn Kim Hiếu</title>
+    <style>
+        table{
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+<table border="0px ">
+    <tr>
+        <td>Amount</td>
+        <td>From Curency</td>
+        <td>To Curency</td>
+    </tr>
+    <tr>
+        <td><input type="text" id="sotien" placeholder="Nhập số tiền"></td>
+        <td><select name="From" id="From">
+            <option value="VietNam">VietNam</option>
+            <option value="USD">USD</option>
+            </select></td>
+        <td>
+            <select name="To" id="To">
+                <option value="USD">USD</option>
+                <option value="VietNam">VietNam</option>
+            </select>
+        </td>
+        <td></td>
+        <td><button onclick="Tinh()">Convert</button></td>
+    </tr>
+</table>
+<p id="here"></p>
+<script>
+function Tinh() {
+let input = +document.getElementById("sotien").value;
+let N1 = +document.getElementById("From").value;
+let N2 = +document.getElementById("To").value;
+
+ if (N1 =="VietNam" && N2=="USD"){
+     let thanhtien = input/23000;
+ }
+    document.getElementById("here").innerText="$"+sum;
+    if (N2 =="VietNam" && N1=="USD"){
+        let thanhtien = input*23000;
+    }
+    document.getElementById("here").innerText="VNĐ"+thanhtien;
+
+}
+</script>
+</body>
+</html>

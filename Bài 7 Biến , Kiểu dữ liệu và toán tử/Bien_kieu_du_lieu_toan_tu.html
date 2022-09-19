@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nguyễn Kim Hiếu</title>
+</head>
+<h2 style="color: blue">Tính điểm môn học</h2>
+<body style="background-color: #ea9b9b">
+<input id="num1" type="text" placeholder="Nhập điểm Lý">
+<input id="num2" type="text" placeholder="Nhập điểm Hóa">
+<input id="num3" type="text" placeholder="Nhập điểm Sinh"><br><br>
+<button onclick="Sum()">Tính Tổng </button>
+<p id="Tông" style="color: white"></p>
+<button onclick="Ave()">Tính Trung Bình</button>
+<p id="TB" style="color: white"></p>
+
+
+<h2 style="color: blue">Quy đổi độ </h2>
+<input type="text" id="C" placeholder="Nhập Độ C">
+<button onclick="temp()">Quy Đổi</button>
+<p id="hai" style="color: white"></p>
+
+
+
+<h2 style="color: blue">Tính Diện Tích, chu vi Hình Tròn </h2>
+<input type="text" id="bankinh" placeholder="Nhập Bán Kính "><br><br>
+<button onclick="CV()">Tính CHu Vi</button>
+<p id="Cvi" style="color: white"></p>
+<button onclick="DT()">Tính Diện Tích</button>
+<p id="Dtich" style="color: white"></p>
+
+
+<script>
+
+    /*  ---------------Tính điểm môn học---------------------*/
+    function Sum()  {
+        let n1 = +document.getElementById("num1").value;
+        let n2 = +document.getElementById("num2").value;
+        let n3 = +document.getElementById("num3").value;
+        let sum=n1+n2+n3;
+        document.getElementById("Tông").innerText="TỔng 3 môn là là "+ sum;
+}
+    function Ave() {
+        let n1 = +document.getElementById("num1").value;
+        let n2 = +document.getElementById("num2").value;
+        let n3 = +document.getElementById("num3").value;
+        let ave = (n1 + n2 + n3) / 3;
+        document.getElementById("TB").innerText = "Tbinh 3 môn là " + ave;
+    }
+
+  /*  ---------------Quy đổi độ---------------------*/
+
+    function temp() {
+    let C= +document.getElementById("C").value;
+    let F= ((9*C)/5)+32;
+    document.getElementById("hai").innerText=" F = "+ F;
+    }
+
+    /*  -----------------Tính Diện Tích, chu vi Hình Tròn-------------------*/
+    function CV() {
+    let R=+document.getElementById("bankinh").value;
+    let CV=2*3.14*R;
+    document.getElementById("Cvi").innerText=" Chu vi là "+ CV;
+    }
+    function DT() {
+        let R=+document.getElementById("bankinh").value;
+        let DT=3.14*R*R;
+        document.getElementById("Dtich").innerText=" Diện Tích là "+ DT;
+    }
+
+
+
+</script>
+</body>
+</html>
