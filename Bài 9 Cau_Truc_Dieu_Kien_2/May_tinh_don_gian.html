@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nguyễn Kim Hiếu</title>
+</head>
+<body>
+<table style="border-style: groove ; color: black">
+    <tr>
+        <td colspan="4"><input type="text" id="window" placeholder="Nhập phép tính"></td>
+    </tr>
+   <tr>
+       <td><input type="button" onclick="nhap(this.value)" value="1"></td>
+       <td><input type="button" onclick="nhap(this.value)" value="2"></td>
+       <td><input type="button" onclick="nhap(this.value)" value="3"></td>
+       <td><input type="button" onclick="nhap(this.value)" value="+"></td>
+   </tr>
+    <tr>
+        <td><input type="button" onclick="nhap(this.value)" value="4"></td>
+        <td><input type="button" onclick="nhap(this.value)" value="5"></td>
+        <td><input type="button" onclick="nhap(this.value)" value="6"></td>
+        <td><input type="button" onclick="nhap(this.value)" value="-"></td>
+    </tr>
+    <tr>
+        <td><input type="button" onclick="nhap(this.value)" value="7"></td>
+        <td><input type="button" onclick="nhap(this.value)" value="8"></td>
+        <td><input type="button" onclick="nhap(this.value)" value="9"></td>
+        <td><input type="button" onclick="nhap(this.value)" value="*"></td>
+    </tr>
+    <tr>
+        <td><input type="button" onclick="xoa()" value="C"></td>
+        <td><input type="button" onclick="nhap(this.value)" value="0"></td>
+        <td><input type="button" onclick="bang()" value="="></td>
+        <td><input type="button" onclick="nhap(this.value)" value="/"></td>
+    </tr>
+    <tr>
+        <td><input type="button" onclick="xoaKyTu()" value="x"></td>
+    </tr>
+    <script>
+
+        function nhap(so) {
+        document.getElementById("window").value +=so;
+}
+        function bang() {
+        let string = document.getElementById("window").value;
+        document.getElementById("window").value = eval(string);
+        }
+        function xoa() {
+        document.getElementById("window").value="";
+        }
+        function xoaKyTu() {
+            let string = document.getElementById("window").value;
+            let array = string.split("");
+            array[array.length-1]="";
+            document.getElementById("window").value=array.join("");
+        }
+    </script>
+</table>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiếu</title>
+</head>
+
+<body>
+<script>
+    let soluong = +prompt("Nhập vào số lượng bán được tháng này");
+    let Dongia = +prompt("Nhập vào Đơn giá một sản phẩm");
+    let thanhtien = soluong * Dongia;
+
+    if (thanhtien < 500000) {
+        let Doanhthu = (thanhtien * 10 )/100;
+        alert(" tiền hoa hồng tháng này là " + Doanhthu + "VNĐ");
+    } else {
+            let Doanhthu = (thanhtien * 15)/100;
+            alert(" tiền hoa hồng tháng này là " + Doanhthu + "VNĐ");
+           }
+
+</script>
+</body>
+</html>
