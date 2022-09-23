@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let income = +prompt("Nhập số tiền thu nhập ");
+    if (income > 20000000) {
+        alert("Thuế phải đóng là " + income * (10 / 100));
+        if (income > 10000000) {
+            alert("Thuế phải đóng là " + income * (8 / 100));
+        }
+    } else {
+        alert("Thuế phải đóng là " + income * (6 / 100));
+    }
+</script>
+
+</body>
+</html>

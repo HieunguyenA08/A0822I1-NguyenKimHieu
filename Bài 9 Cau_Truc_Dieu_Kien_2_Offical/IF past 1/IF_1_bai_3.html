@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiếu</title>
+</head>
+<body>
+<input type="text" id="nhap" placeholder="Nhập vào một số ">
+<button onclick="Check()">Kiểm Tra</button>
+<p id="printf"></p>
+<script>
+    function Check() {
+        let num = +document.getElementById("nhap").value;
+        if (num<0)
+            document.getElementById("printf").innerText = "Số vừa nhập bé hơn 0";
+        else
+            document.getElementById("printf").innerText = "Số vừa nhập lớn hơn 0";
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hieu</title>
+</head>
+<body>
+<h1>Chuyển đổi độ C sang độ F</h1>
+<p>Nhập vào độ C</p>
+<input type="text" id="DoC" placeholder="Nhập vào độ C">
+<button onclick="Transferr() ">Chuyển đổi</button>
+<p>Kết quả là</p>
+<input type="text" id="result" placeholder="Độ F">
+<script>
+    function Transferr() {
+ let inp = parseInt(document.getElementById(DoC).value);
+ let out = inp * 9 / 5 + 32;
+ document.getElementById('result').innerText = out + "độ F";
+    }
+</script>
+</body>
+</html>

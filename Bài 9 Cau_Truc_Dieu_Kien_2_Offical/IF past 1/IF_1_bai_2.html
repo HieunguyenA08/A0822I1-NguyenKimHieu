@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="nhap" placeholder="Nhập vào số tuổi">
+<button onclick="Check()">Kiểm Tra</button>
+<p id="printf"></p>
+<script>
+    function Check() {
+        let age = +document.getElementById("nhap").value;
+        if (age<16)
+            document.getElementById("printf").innerText = "Thí sinh không đủ điều kiện";
+        else
+            document.getElementById("printf").innerText = "Thí sinh đã đủ điều kiện";
+    }
+</script>
+</body>
+</html>

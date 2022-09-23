@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = + prompt("Nhập a");
+    let b = + prompt("Nhập b");
+    let c = + prompt("Nhập c");
+    let d = b*b-4*a*c;
+    if (d<0) {
+        alert("Phương trình vô nghiệm");
+        if (d==0){
+            alert("x= " + -b/(2*a));
+        }
+    }else {
+        alert("x1= "+ (-b+Math.sqrt(d)) / (2*a));
+        alert("x2= "+ (-b-Math.sqrt(d)) / (2*a));
+    }
+</script>
+</body>
+</html>
