@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hieu</title>
+</head>
+<body>
+<h1>Bảng Cửu CHương</h1>
+<p id="KetQua"></p>
+<script>
+    let data = '<table border="1">';
+    for (let i=0;i<9;i++){
+        data += '<tr>'
+        for (let j=0 ;j<8;j++){
+            data += ' <td style="width: 80px;height: 20px "> ' + j + 'x' + i + "=" + (i*j) + '</td>';
+        }
+        data += ' </tr>';
+    }
+     data += '</table>';
+    document.getElementById("KetQua").innerHTML=data;
+</script>
+</body>
+</html>

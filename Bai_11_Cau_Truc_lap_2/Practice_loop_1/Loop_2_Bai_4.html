@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4</title>
+</head>
+<body>
+<script>
+    let n1 = 0;
+    let n2 = 1;
+    let sum=0;
+    let count=0;
+    while(count<20) {
+        sum=n1+n2;
+        n1=n2;
+        n2=sum;
+        count++;
+        if (n2%5==0){
+            break;
+        }
+    }
+    document.write("Số đầu tiên chia hết cho 5 là "+ n2)
+</script>
+</body>
+</html>
