@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 8</title>
+</head>
+<body>
+<h1 style="text-align: center">Game đoán số </h1>
+<button onclick="momo()">Play</button>
+<script>
+    function momo() {
+        let min = +prompt("Nhập khoảng đầu ");
+        let max = +prompt("Nhập khoảng cuối ");
+        let random = Math.floor(Math.random() * (max - min) + min);
+        let guess = +prompt(" What number you wanna get !!!!  ");
+        while (true) {
+            if (guess == random) {
+                alert("Congratulation!!You are so Talen ");
+                alert("Let a new game ");
+                break;
+            } else if (guess < random) {
+                alert("Oh no !!Luck didn't come to you.Try to guess the bigger number... ");
+                guess = +prompt(" Let's Try again ");
+            }else {
+                alert("Oh no !!Luck didn't come to you.Try to guess the smaller number... ");
+                guess = +prompt(" Let's Try again ");
+            }
+
+        }
+    }
+</script>
+</body>
+</html>
