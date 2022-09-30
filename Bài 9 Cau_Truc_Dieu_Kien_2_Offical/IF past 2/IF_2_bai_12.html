@@ -5,6 +5,12 @@
     <title>Title</title>
 </head>
 <body>
-
+<script>
+    let money = prompt("Số tiền gửi ban đầu: ");
+    let month = prompt("Nhập số tháng gửi: ");
+    let  rate = prompt("Nhập lãi suất theo tháng: ");
+    income = (money * (1+  rate) ^ month);
+    alert("Tiền nhận được sau lãi : " + income + "VND");
+</script>
 </body>
 </html>
