@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 5</title>
+</head>
+<body>
+<script>
+  // số tiền ban đầu muốn gửi
+    let P = +prompt("Nhập số tiền muốn gửi ");
+  // số lãi suất đơn vị %
+  let r = +prompt("Nhập lãi xuất (%) trên tháng ");
+  //số tháng
+  let n = +prompt("Nhập số tháng gửi ");
+  // tiền lãi hằng tháng
+  let income=0;
+  for (i=1;i<=n;i++){
+      income=P*(r/100);
+          P+=income;
+  }
+  alert("Tổng tiền nhận được sau "+ n + "tháng là "+ P);
+</script>
+</body>
+</html>
