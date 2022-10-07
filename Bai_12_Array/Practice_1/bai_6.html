@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6</title>
+</head>
+<body>
+<script>
+    let n = +prompt("Nhập vào số phần tử của mảng ")
+    let arr = [];
+    for (let i = 1; i <= n; i++) {
+        arr[i] = +prompt("Nhập số thứ " + i + " :");
+    }
+    let V = +prompt("Nhập số nguyên cần tìm kiếm ");
+   mark=false;
+    for (let i = 0; i < n; i++) {
+        if(V === arr[i] ){
+            document.write('V is in the array');
+            mark = true;
+        }
+    }
+    if (mark == false) {
+        document.write('V is not in the array');
+    }
+
+</script>
+</body>
+</html>

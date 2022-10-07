@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tu dien</title>
+</head>
+<body>
+<input onkeyup="Trans()" id="Englishword" type="text" placeholder="Nhập từ tiếng anh vào đây">
+
+<p id="result"></p>
+<script>
+    let English = ['banana','papaya','blueberry'];
+    let Vietnamese = ['Chuối','đu đủ','nam việt quất'];
+    let index=100;
+
+    function Trans() {
+    let myword = document.getElementById("Englishword").value;
+
+    for (let i = 0; i <English.length ; i++) {
+        if (myword === English[i]){
+            index=i;
+            document.getElementById("result").innerText = Vietnamese[index];
+        }
+    }
+    if (index===100){
+        document.getElementById("result").innerText="Không tìm thấy";
+    }
+
+}
+</script>
+</body>
+</html>

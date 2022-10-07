@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 8</title>
+</head>
+<body>
+<script>
+    let num_elements = +prompt("Enter the number of the array");
+    Myarray = [];
+    for (let i = 1; i <= num_elements; i++) {
+        Myarray[i] = +prompt('Enter the element ' + i + ' of array ');
+    }
+    let tg;
+    for (let i = 0; i < Myarray.length; i++) {
+        for (let j = i + 1; j < Myarray.length; j++) {
+            if (Myarray[i] < Myarray[j]) {
+                // Hoan vi 2 so a[i] va a[j]
+                tg = Myarray[i];
+                Myarray[i] = Myarray[j];
+                Myarray[j] = tg;
+            }
+        }
+    }
+    Myarray.shift();
+    document.write("Mảng sau khi sắp xếp là : ")
+    document.write(Myarray);
+</script>
+</body>
+</html>

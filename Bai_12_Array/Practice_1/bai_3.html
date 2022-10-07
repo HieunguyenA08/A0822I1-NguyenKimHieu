@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 3</title>
+</head>
+<body>
+<script>
+    let some_number = [8, 2, 9, 3, 11, 53, 64, 6, 34, 41, 25];
+    let max = some_number[0];
+    let sum = 0;
+    for (let i = 0; i <= some_number.length; i++) {
+        sum += some_number[i];
+        if (some_number[i] > max) {
+            max = some_number[i];
+
+        }
+    }
+        document.write("số lớn nhất là " + max + " và giá trị trung bình của mảng bằng " + sum / 10);
+</script>
+</body>
+</html>

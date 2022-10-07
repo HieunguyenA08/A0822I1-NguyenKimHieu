@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 9</title>
+</head>
+<body>
+<script>
+    let num_elements_a = +prompt("Enter the number of the array a");
+    Myarray_a = [];
+    for (let i = 1; i <= num_elements_a; i++) {
+        Myarray_a[i] = +prompt('Enter the element ' + i + ' of array a');
+    }
+
+    let num_elements_b = +prompt("Enter the number of the array b");
+    Myarray_b = [];
+    for (let i = 1; i <= num_elements_b; i++) {
+        Myarray_b[i] = +prompt('Enter the element ' + i + ' of array b');
+    }
+    document.write("Mảng c là : ")
+    document.write("<br>")
+    Myarray_a.shift();
+    document.write(Myarray_a + Myarray_b);
+</script>
+</body>
+</html>

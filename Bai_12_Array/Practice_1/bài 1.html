@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 1</title>
+</head>
+<body>
+
+<script>
+    let some_number = [];
+    for (let i = 1; i <= 10 ; i++) {
+       let num = prompt("Nhập phần tử thứ "+ i);
+        some_number[i]= num;
+    }
+   count=0;
+    for (let j = 0; j <=some_number.length ; j++) {
+        if (some_number[j]>=10){
+        count++;
+        }
+    }
+alert("Trong dãy vừa nhập có  "+ count + " số lớn hơn 10 ");
+</script>
+</body>
+</html>

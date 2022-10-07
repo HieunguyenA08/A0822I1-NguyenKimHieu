@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 7</title>
+</head>
+<body>
+
+<h3>Mảng sau khi xóa là :</h3><br>
+<script>
+    let num_elements = +prompt("Enter the number of the array");
+    Myarray = [];
+
+    for (let i = 0; i < num_elements; i++) {
+        Myarray[i] = +prompt('Enter the element ' + i + ' of array ');
+    }
+    let Find_number = +prompt('Enter the number you wanna find ');
+    index = -1;
+    for (let i = 0; i < Myarray.length; i++) {
+        if (Myarray[i] == Find_number){
+            index=i;
+        }
+    }
+    for (let i = index; i < Myarray.length; i++) {
+       Myarray[i]=Myarray[i+1];
+    }
+    Myarray.pop();
+
+    document.write(Myarray);
+</script>
+</body>
+</html>
