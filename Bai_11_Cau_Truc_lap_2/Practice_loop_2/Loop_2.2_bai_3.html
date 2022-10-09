@@ -28,27 +28,29 @@
 
     document.write('<br>');
 
-    //tam giac so 3
-    let k=1;
-    let n=5;
-    while (k<=n){
-        for (i=1;i<=n-k;i++){
-            document.write( );
-
+    //tam giác số 3
+    document.write("<br>")
+    for (let i = 0 ; i <= 5; i++){
+        for (let j = i; j <= 5 ; j++){
+            document.writeln("&nbsp");
         }
-
-        for (i=1;i<=k;i++){
+        for (let j = 0; j <= i; j++){
+            document.write("*");
+        }
+        document.write("<br>")
+    }
+    //tam giác số 4
+    document.write("<br>")
+    for (let i = 0 ; i <=  5; i++){
+        for (let j = 0; j <=  i; j++){
+            document.writeln("&nbsp")
+        }
+        for (let j = i; j <=  5; j++){
             document.write("*");
         }
         document.write("<br>");
-        k++;
     }
 
-
-    document.write('<br>');
-
-
-    
 </script>
 </body>
 </html>

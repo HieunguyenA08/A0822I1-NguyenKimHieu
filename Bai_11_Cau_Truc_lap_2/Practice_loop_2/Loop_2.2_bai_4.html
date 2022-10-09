@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let height =+prompt("Nhập chiều cao:");
+    let width =+prompt("Nhập chiều rộng:");
+    let space = "&nbsp";
+    for (let i = 1; i <= height; i++){
+        for (let j = 1; j <= width; j++){
+            if (i == 1 || i == height){
+                document.write("*" +space );
+            }else if (j == 1|| j == width){
+                document.write("*" + space);
+            }else {
+                document.write(space + space + space);
+            }
+        }
+        document.write("<br>")
+    }
+</script>
+</body>
+</html>
