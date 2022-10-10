@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Chương trình chuyển đổi độ dài </p>
+<input type="text" onkeyup="meter()" placeholder="Nhập độ dài (meter) vào đây" id="meter">
+<p id="printf1"></p>
+<input type="text" onkeyup="Foot()" placeholder="Nhập độ dài (Foot) vào đây" id="foot">
+<p id="printf2"></p>
+<script>
+    function meter() {
+        result1 = meterToFoot(document.getElementById("meter").value);
+        document.getElementById("printf1").innerText=result1 + " Feet";
+    }
+
+    function Foot() {
+        result2 = footToMeter(document.getElementById("foot").value);
+        document.getElementById("printf2").innerText=result2+" Meters";
+    }
+
+  //-----------------
+    function meterToFoot(meter){
+        let   foot = 3.279 * meter
+        return foot;
+    }
+    function footToMeter(foot){
+        let  meter = 0.305 * foot;
+        return meter
+    }
+</script>
+</body>
+</html>
