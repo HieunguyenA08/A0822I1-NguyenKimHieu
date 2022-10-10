@@ -2,28 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Bài 5</title>
+    <title>Bài 6</title>
 </head>
 <body>
 <script>
-    let Arr1 = [];
-    let n1 = + prompt("Enter the number of array 1");
-    for (let i = 0; i < n1; i++) {
-        Arr1[i] = + prompt("Enter the element " + i +" :");
+    let a = prompt("Mời nhập chuỗi thứ nhất" );
+    let b = prompt("Mời nhập chuỗi thứ hai" );
+    if (a==b){
+        document.write("Hai chuỗi giống nhau ");
+    }else{
+        document.write("Hai chuỗi khác nhau");
     }
-
-    let Arr2 = [];
-    let n2 = + prompt("Enter the number of array 2");
-    for (let i = 0; i < n2; i++) {
-        Arr2[i] = + prompt("Enter the element " + i +" :");
-    }
-    if (Arr1 === Arr2){
-        document.write("HAI chuỗi giống nhau ");
-    }else {
-        document.write("HAI chuỗi không giống nhau ");
-    }
-
-
 </script>
 </body>
 </html>

@@ -6,13 +6,14 @@
 </head>
 <body>
 <script>
-    let a = prompt("Mời nhập chuỗi thứ nhất" );
-    let b = prompt("Mời nhập chuỗi thứ hai" );
-    if (a==b){
-        document.write("Hai chuỗi giống nhau ");
-    }else{
-        document.write("Hai chuỗi khác nhau");
+    let arr=[];
+    let n = +prompt("Nhập số phần tử trong mảng ");
+    for (let i = 0; i < n; i++) {
+        arr[i] = prompt("Nhập vào phần tử thứ  "+ i);
+        value=arr[i];
+        document.write(value.replace('-','_'));
     }
+
 </script>
 </body>
 </html>
