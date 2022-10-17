@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n =prompt("Nhập số mảng phần tử:");
+    let numberArray = [];
+    for (let i = 0; i < n; i++) {
+        numberArray[i] =prompt('Nhập phần tử thứ' + i + 'của mảng');
+    }
+    let characterarr =prompt("Nhập một ký tự bất kì trong mảng: ");
+    function character(char,c) {
+        let count = 0;
+        for (let i=0; i < char.length; i++){
+            if ( c === char[i]){
+                count++;
+            }
+        }
+        if (count === 0) {
+            return -1;
+        }else {
+            return count;
+        }
+    }
+    alert("Số lần xuất hiện:"+character(numberArray,characterarr));
+</script>
+</body>
+</html>

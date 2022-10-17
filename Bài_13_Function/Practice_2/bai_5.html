@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+<script>
+    let num1 = +prompt("Nhập số thứ nhất");
+    let num2 = +prompt("Nhập số thứ hai");
+    let num3 = +prompt("Nhập số thứ ba");
+    function check(a,b,c) {
+    let min = a;
+    if (a>b){
+        min=b;
+    }
+    if (c<min){
+        min=c;
+    }
+    document.write("số nhỏ nhất là :"+min);
+    }
+    check(num1,num2,num3);
+</script>
+</body>
+</html>
