@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hieu</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(C) {
+            this.C = C;
+        }
+
+        getChangeF() {
+            return ((this.C * 9) / 5) + 32;
+        }
+
+        getchangeKevin() {
+            return this.C + 273.15;
+        }
+    }
+    let Temperature1 = new Temperature(37);
+    let F = Temperature1.getChangeF();
+    let Kevin = Temperature1.getchangeKevin();
+    alert("F = "+ F + "°F" + "  " + " Kevin = " + Kevin +"°K");
+</script>
+</body>
+</html>

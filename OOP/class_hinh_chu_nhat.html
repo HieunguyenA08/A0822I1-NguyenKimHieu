@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>class HCN</title>
+    <style>
+        *
+    </style>
+</head>
+<body>
+<script>
+    class Ractangle {
+        constructor(width,height) {
+            this.width=width;
+            this.height=height;
+
+        }
+        getPerimeter(){
+            return (this.width+this.height)*2;
+        }
+        getArea(){
+            return this.width*this.height;
+        }
+        setWH(width,height){
+            this.width=width;
+            this.height=height;
+        }
+    }
+    let HCN = new Ractangle(2,4);
+    HCN.setWH(4,5);
+    let Perimeter = HCN.getPerimeter();
+    let Area = HCN.getArea();
+    alert("Chu vi " + Perimeter );
+    alert("Dien tich " + Area );
+</script>
+</body>
+</html>
