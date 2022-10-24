@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Apple {
+        constructor(weight) {
+            this.weight = weight;
+        }
+
+        setWeight(weight) {
+            this.weight = weight;
+        }
+
+        getWeight() {
+            return this.weight;
+        }
+    }
+
+    class Human {
+        constructor(name, gender, weight, piece) {
+            this.name = name;
+            this.gender = gender;
+            this.weight = weight;
+            this.piece = piece;
+        }
+        getName() {
+            return this.name;
+        }
+        getGender() {
+            return this.gender;
+        }
+        getWeight() {
+            return this.weight;
+        }
+        getPiece() {
+            return this.piece;
+        }
+
+        getEat(apple) {
+            document.write("Táo nặng " + apple.weight+"kg" + " và " + this.name +" Nặng "  + this.weight +"kg");
+            document.write("<br>");
+            if (apple.weight > 0) {
+                for (let i = 1; i <= this.piece; i++) {
+                    this.weight++;
+                    apple.weight--;
+                }
+
+                document.write(this.name + " đã ăn " + this.piece + " miếng ");
+                document.write("<br>");
+                document.write("Vậy Số cân nặng của " + this.name + " là " + this.weight + "kg  và Quả táo còn " + apple.weight + "kg"  );
+                document.write("<br>");
+                document.write("<br>");
+                document.write("<br>");
+            }else
+            document.write("Táo đâu ăn má");
+        }
+    }
+
+    let human1 = new Human('Adam','man',60,3);
+    let apple1 = new Apple(5);
+    human1.getEat(apple1);
+
+    let human2 = new Human('Eva','woman',44,2);
+    let apple2 = new Apple(6);
+    human2.getEat(apple2);
+
+    let human3 = new Human('Eva','woman',44,2);
+    let apple3 = new Apple(0);
+    human3.getEat(apple3);
+
+</script>
+</body>
+</html>
